@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<link  rel="stylesheet" type="text/css" href="styles.css" >
+		<title> News Monkey </title>
+		<meta charset = "UTF-8" />
+	</head>
+    
+	<body>
+	
+
+
+
+<div id="id01" class="modal">
+  
+  <div class="modal-content animate" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" id="uname" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id = "psw" required>
+        
+      <button type="submit" onclick="validateForm()">Login</button>
+      <input type="checkbox" checked="checked"> Remember me
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </div>
+</div>
+	
+	
+	<div id= "bod">
+	
+	<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li style="float:right"><a class="active" href="#" onclick="document.getElementById('id01').style.display='block'" >Login</a></li>
+</ul>
+
+		
+   <h1 id= "come"> .</h1>
+  
+	
+	</div>
+
+	<footer>
+	
+	
+    <p id="foot">copyright &#169 <a id="link" target="_blank" href="https://www.facebook.com/pages/Digital-Fortress-Dan-Brown/103846832982465">News Monkey</a></p>
+	
+	</footer>
+	
+	</div>
+	</body>
+   
+	
+	<script src="validate.js"></script>
+
+
+</html>
