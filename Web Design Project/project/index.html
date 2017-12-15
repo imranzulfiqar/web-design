@@ -9,9 +9,36 @@
 	</head>
     
 	<body>
-	
-
-
+      <div id= "bod">
+          
+          <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li style="float:right"><a href="#" onclick="document.getElementById('register').style.display='block'" >Register</a></li>  
+          <li style="float:right"><a class="active" href="#" onclick="document.getElementById('id01').style.display='block'" >Login</a></li>
+        </ul>
+        
+          </div>
+      <div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+        <h1>Welcome to News Portal</h1>
+      </div>
+      
+      <div style="overflow:auto">
+ 
+      
+        <div class="main">
+          <h2>News On Demand</h2>
+          <p>Get access to the latest news for free.</p>
+        </div>
+      
+        <div class="right">
+          <h2>About</h2>
+          <p>We gather and display articles and newsfeed from CNN,BBC, ABC and many other global channels from different countries.</p>
+        </div>
+      </div>
+      
+    
 
 <div id="id01" class="modal">
   
@@ -38,22 +65,36 @@
     </div>
   </div>
 </div>
-	
-	
-	<div id= "bod">
-	
-	<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li style="float:right"><a class="active" href="#" onclick="document.getElementById('id01').style.display='block'" >Login</a></li>
-</ul>
-
-		
-   <h1 id= "come"> .</h1>
   
+<div id="register" class="modal">
+  
+  <div class="modal-content animate" >
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="name" id="name" required>
+
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="pass" id = "pass" required>
+
+      <label><b>Phone</b></label>
+      <input type="password" placeholder="Enter Phone number" name="phone" id = "phone" required>
+        
+      <button type="submit" onclick="validateForm()">Register</button>
+  
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+  </div>
+</div>
 	
-	</div>
+
 
 	<footer>
 	
